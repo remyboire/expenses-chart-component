@@ -1,43 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Frontend Mentor | Expenses chart component</title>
 
-  My balance
-  $921.48
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<link rel="stylesheet" href="style.css" />
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="border-radius bg-red">
+				<div class="column">
+					<span class="text cream-white">My balance</span>
+					<span class="heading-l cream-white fadeIn">$921.48</span>
+				</div>
+				<span class="logo">
+					<img src="./images/logo.svg" alt="logo" />
+				</span>
+			</header>
+			<div class="charts-wrapper border-radius bg-cream-white">
+				<main>
+					<h1 class="heading-l dark-brown">Spending - Last 7 days</h1>
+					<div class="charts">
+						<!-- <div class="chart">
+							<div class="chart-bar" data-value="50.02"></div>
+							<div class="chart-day mini-caption medium-brown">mon</div>
+						</div>
+						<div class="chart">
+							<div class="chart-bar" data-value="50.02"></div>
+							<div class="chart-day mini-caption medium-brown">tue</div>
+						</div>
+						<div class="chart">
+							<div class="chart-bar" data-value="50.02"></div>
+							<div class="chart-day mini-caption medium-brown">wed</div>
+						</div>
+						<div class="chart current">
+							<div class="chart-bar" data-value="50.02"></div>
+							<div class="chart-day mini-caption medium-brown">thu</div>
+						</div>
+						<div class="chart">
+							<div class="chart-bar" data-value="50.02"></div>
+							<div class="chart-day mini-caption medium-brown">fri</div>
+						</div>
+						<div class="chart">
+							<div class="chart-bar"></div>
+							<div class="chart-day mini-caption medium-brown">sat</div>
+						</div>
+						<div class="chart">
+							<div class="chart-bar"></div>
+							<div class="chart-day mini-caption medium-brown">sun</div>
+						</div>
+					</div> -->
+				</main>
+				<footer class="summary">
+					<div class="summary-current column">
+						<span class="text medium-brown">Total this month</span>
+						<span class="heading-xl dark-brown fadeIn">$478.33</span>
+					</div>
+					<div class="summary-last column">
+						<span class="text-bold dark-brown align-right fadeIn">+2.4%</span>
+						<span class="text medium-brown align-right">from last month</span>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->
+	</body>
+	<script type="text/javascript" src="data.json"></script>
+	<script src="script.js"></script>
 </html>
