@@ -2,7 +2,6 @@ const url = 'data.json'
 const charts = document.querySelector('.charts')
 let highest
 let currentDay = new Date().toLocaleDateString('en-us', { weekday: 'short' }).toLowerCase()
-console.log(currentDay)
 
 fetch(url)
 	.then((res) => {
@@ -16,9 +15,6 @@ fetch(url)
 			charts.appendChild(createChart(chart))
 		})
 		document.querySelectorAll('.fadeIn').forEach((element, arr) => {
-			// setTimeout(() => {
-			// 	element.classList.add('fadeIn-active')
-			// }, (arr + 1) * 100)
 			setTimeout(() => {
 				element.style.opacity = 1
 				element.style.transform = 'translateY(0)'
